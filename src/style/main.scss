@@ -257,12 +257,12 @@
 }
 
 // about/unicorns section
-.main {
+.unicorns {
     background-color: #131313;
     padding: 10rem 0;
 }
 
-.main-container {
+.unicorns-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -273,4 +273,24 @@
     width: 100%;
     max-width: 1300px;
     padding: 0 50px;
+}
+
+.unicorns-content {
+    color: #fff;
+    width: 100%;
+
+}
+
+.unicorns-content {
+    font-size: 2rem;
+    background-color: #fe3b6f;
+    background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+
 }
