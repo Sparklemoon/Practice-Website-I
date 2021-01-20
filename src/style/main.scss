@@ -245,3 +245,32 @@
 .higlight {
     border-bottom: 4px solid rgb(132, 0, 255);
 }
+
+@media screen and (max-width: 768px) {
+    .hero-heading {
+        font-size: 60px;
+    }
+
+    .hero-description {
+        font-size: 40px;
+    }
+}
+
+// about/unicorns section
+.main {
+    background-color: #131313;
+    padding: 10rem 0;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90%;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
