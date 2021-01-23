@@ -369,3 +369,87 @@
     color: #fff;
     background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
 }
+
+.fa-ankh {
+    font-size: 14rem;
+
+}
+
+#card-2 {
+    background: #ff512f;
+    background: -webkit-gradient(to right, #dd2476, #ff512f);
+    background: linear-gradient(to right, #dd2476, #ff512f); 
+}
+
+@media screen and (max-width: 110px) {
+    .unicorns-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90%;
+    }
+
+    .unicorns-img-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .unicorns-img-card {
+        height: 425px;
+        width: 425px;
+    }
+
+    .unicorns-content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .unicorns-content h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .unicorns-content h2 {
+        font-size: 3rem;
+    }
+
+    .unicorns-content p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .unicorns-img-card {
+        width: 250px;
+        height: 250px;
+
+    }
+
+    .fa-ankh{
+        font-size: 4rem;
+    }
+
+    .unicorns-content h1 {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    .unicorns-content h2 {
+        font-size: 2rem;
+    }
+
+    .unicorns-content p {
+        margin-top: 2rem;
+        
+    }
+
+    .main-btn {
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+    }
+
+}
