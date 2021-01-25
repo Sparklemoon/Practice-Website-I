@@ -545,3 +545,15 @@
     transition: 0.3s ease-in;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1300px) {
+    .dolphins-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dolphins-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
