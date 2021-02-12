@@ -13,10 +13,11 @@ menu.addEventListener('click', mobileMenu);
 
 const highlightMenu = () => {
   const element = document.querySelector('.highlight')
-  const homeMenu = document.querySelector('#unicorns')
-  const aboutMenu = document.querySelector('#dolphins')
-  const servicesMenu = document.querySelector('#rainbow')
+  const unicornsMenu = document.querySelector('#unicorns')
+  const dolphinsMenu = document.querySelector('#dolphins')
+  const rainbowMenu = document.querySelector('#rainbow')
   let scrollPosition = window.scrollY
+  // console.log(scrollPosition);
 
   //adds highlight class to menu items
   if (window.innerWidth > 960 && scrollPosition < 600) {
@@ -35,7 +36,22 @@ const highlightMenu = () => {
   }
 
   if((element && window.innerWidth < 960 && scrollPosition < 600) || element) {
-    elem.classList.remove('highlight')
+    element.classList.remove('highlight')
   }
-  
+
 }
+
+window.addEventListener('scroll', highlightMenu);
+window.addEventListener('click', highlightMenu);
+
+//close mobile menu when clicking on a menu item
+const hideMobileMenu = () => {
+  const menuBars = document.querySelector('.is-active')
+  if(window.innerWidth <= 768 && menuBars) {
+    menu.classList.toggle('is-active')
+    menuLinks.classList.remove('active')
+  }
+}
+
+menuLinks.addEventListener('click', hideMobileMenu);
+navLogo.addEventListener('click', hideMobileMenu);
